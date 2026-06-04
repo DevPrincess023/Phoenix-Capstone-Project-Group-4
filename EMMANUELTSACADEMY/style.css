@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f4;
+}
+
+.table {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.planet-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.planet-table caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.planet-table th,
+.planet-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.planet-table thead {
+    background: #1f3b73;
+    color: white;
+}
+
+.category {
+    background: #dbeafe;
+    font-weight: bold;
+}
+
+.sub-category {
+    background: #e0f2fe;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
