@@ -11,21 +11,22 @@ This application recreates a provided mockup as a fully working React web app. I
 
 ## Team Members
 
-- Mercy
-- Daniel
-- Michael
-- Glory
-- Mavin
-- Fredrick
-- Ifeoma
-- Favour
-- Victor
+- Mercy  https://github.com/DevPrincess023
+- Daniel  https://github.com/Dannyfx-spec
+- Michael  https://github.com/Mickeyflash196  
+- Glory  https://github.com/
+- Jude  https://github.com/marvinmoses2425-cmyk
+- Fredrick  https://github.com/001-Fred
+- Ifeoma  https://github.com/Ifystina
+- Favour  https://github.com/
+- Victor  https://github.com/
+- Emmanuel  https://github.com/Modupe101
 
 
 ## Components
 
 - **Header** - Worked on by: [Name]
-- **Video section** - Worked on by: Marvin
+- **Video section** - Worked on by: Jude
 - **Image section** - Worked on by: Michael and Fredrick
 - **Data Table** - Worked on by: Mercy
 - **contact form** - Worked on by: Victor
@@ -34,9 +35,9 @@ This application recreates a provided mockup as a fully working React web app. I
 
 ## How to Run
 
-1. Clone the repository: git clone https://github.com/DevPrincess023/Phoenix-Capstone-Project-Group-4/tree/main
-2. Install dependencies: npm install
-3. Start the app: npm start
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the app: `npm start`
 4. Open http://localhost:3000 in your browser
 
 
