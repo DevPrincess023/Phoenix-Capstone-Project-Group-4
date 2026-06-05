@@ -13,20 +13,27 @@
     <div class="container">
         <div class="video-wrapper">
             <video 
-                controls 
+                autoplay 
+                loop 
+                muted 
                 playsinline 
-                preload="none"
-                poster="assets/planetary-poster.jpg">
-                <source src="Video/Updated vid.mp4" type="video/mp4">
+                controls
+                preload="metadata"
+                poster="Assets/Planetary image.jpeg" alt="Planetary picture">
+                title="Planetary data visualization showing orbital paths and measurements"
+                aria-label="Video showing planetary data visualization">
+                
+                <source src="Video/Updated vid.mp4" type="video/mp4" alt="Earth rotating">
+                
+                <!-- Fallback text for browsers that don't support video -->
+                Your browser does not support the video tag. 
+                <a href="assets/planetary-video.mp4">Download the video here</a>.
             </video>
         </div>
         <div class="content">
             <h2>How Planetary Data Helps Us <br>Understand Space</h2>
             <p>
-                Planetary science goes beyond images. Comparing 
-                <strong>mass, diameter, gravity,</strong> and 
-                <strong>density</strong>, we gain insight into how 
-                planets form, behave, and interact within the solar system.
+                Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density</strong>, we gain insight into how planets form, behave, and interact within the solar system.
             </p>
         </div>
     </div>
