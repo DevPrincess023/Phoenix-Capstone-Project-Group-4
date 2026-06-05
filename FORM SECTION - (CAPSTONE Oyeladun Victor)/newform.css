@@ -23,7 +23,7 @@ body {
 }
 
 /* Header */
-.form-header h1 {
+.form-header h2 {
     color: #1a52b8;
     font-size: 2rem;
     font-weight: 700;
@@ -224,7 +224,7 @@ body {
         padding: 20px;
         }
 
-    .form-header h1,
+    .form-header h2,
     .form-header p {
     text-align: center;
     }
