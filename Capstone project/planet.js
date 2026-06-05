@@ -22,6 +22,7 @@ const PlanetDashboard = () => {
                         <img src={item.image} alt={item.planet} className="planet-img" />
                         <figcaption>
                             <strong>{item.planet}</strong>
+                            {/* Added the distance line back here */}
                             <p>Distance from Sun: {item.distanceFromSun} million km</p>
                         </figcaption>
                     </figure>
@@ -31,3 +32,5 @@ const PlanetDashboard = () => {
     );
 };
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<PlanetDashboard />);
