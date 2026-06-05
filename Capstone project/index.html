@@ -1,161 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Cohort - Planet Dashboard</title>
-    
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>planet distance</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7fa;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        .diff {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 24px;
-            text-align: center;
-        }
-
-        .diff h3 {
-            color: #1d4ed8;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin: 0 0 12px 0;
-            letter-spacing: -0.02em;
-        }
-
-        .diff p {
-            font-size: 0.85rem;
-            color: #64748b;
-            max-width: 680px;
-            margin: 0 auto 48px auto;
-            line-height: 1.6;
-        }
-
-        .planet-grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-            width: 100%;
-        }
-
-        .planet-card {
-            background-color: #ffffff;
-            border-radius: 28px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
-        }
-
-        .planet-img-wrapper {
-            width: 100%;
-            height: 200px;
-            background-color: #000000;
-            overflow: hidden;
-        }
-
-        .planet-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .planet-caption {
-            padding: 24px 20px 28px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            text-align: center;
-        }
-
-        .planet-name {
-            font-size: 0.95rem;
-            color: #0f172a;
-            font-weight: 700;
-        }
-
-        .planet-distance {
-            font-size: 0.8rem;
-            color: #64748b;
-            font-weight: 500;
-        }
-
-        @media (max-width: 900px) {
-            .planet-grid-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 550px) {
-            .planet-grid-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
-
     <div id="root"></div>
-
-    <script type="text/babel">
-        const planetDataset = [
-            { "planet": "Mercury", "distanceFromSun": 57.9, "image": "https://anurella.github.io/images/planets/mercury.webp" },
-            { "planet": "Venus", "distanceFromSun": 108.2, "image": "https://anurella.github.io/images/planets/venus.webp" },
-            { "planet": "Earth", "distanceFromSun": 149.6, "image": "https://anurella.github.io/images/planets/earth.jpg" },
-            { "planet": "Mars", "distanceFromSun": 227.9, "image": "https://anurella.github.io/images/planets/mars.webp" },
-            { "planet": "Jupiter", "distanceFromSun": 778.6, "image": "https://anurella.github.io/images/planets/jupiter.webp" },
-            { "planet": "Saturn", "distanceFromSun": 1433.5, "image": "https://anurella.github.io/images/planets/saturn.webp" },
-            { "planet": "Uranus", "distanceFromSun": 2872.5, "image": "https://anurella.github.io/images/planets/uranus.webp" },
-            { "planet": "Neptune", "distanceFromSun": 4495.1, "image": "https://anurella.github.io/images/planets/neptune.webp" },
-            { "planet": "Pluto", "distanceFromSun": 5906.4, "image": "https://anurella.github.io/images/planets/pluto.webp" }
-        ];
-
-        const PlanetDashboard = () => {
-            const [planets, setPlanets] = React.useState([]);
-
-            React.useEffect(() => {
-                const ordered = [...planetDataset].sort((a, b) => a.distanceFromSun - b.distanceFromSun);
-                setPlanets(ordered);
-            }, []);
-
-            return (
-                <section class="diff">
-                    <h3>Visualizing the Differences Between Planets</h3>
-                    <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
-                    
-                    <div class="planet-grid-container">
-                        {planets.map((item, index) => (
-                            <div class="planet-card" key={index}>
-                                <div class="planet-img-wrapper">
-                                    <img 
-                                        src={item.image} 
-                                        alt={item.planet} 
-                                        class="planet-img" 
-                                    />
-                                </div>
-                                <div class="planet-caption">
-                                    <span class="planet-name">{item.planet}</span>
-                                    <span class="planet-distance">Distance from Sun: {item.distanceFromSun} million km</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            );
-        };
-
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<PlanetDashboard />);
-    </script>
-
+    <script type="text/babel" src="planet.js"></script>
+    <section id="data-section">
+    <h3>Visualizing the Differences Between Planets</h3>
+    <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
+    
+    <div class="planet-grid-container">
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/mercury.webp" alt="Mercury" class="planet-img">
+            <figcaption><strong>Mercury</strong><p>Distance: 57.9 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/venus.webp" alt="Venus" class="planet-img">
+            <figcaption><strong>Venus</strong><p>Distance: 108.2 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/earth.jpg" alt="Earth" class="planet-img">
+            <figcaption><strong>Earth</strong><p>Distance: 149.6 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/mars.webp" alt="Mars" class="planet-img">
+            <figcaption><strong>Mars</strong><p>Distance: 227.9 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/jupiter.webp" alt="Jupiter" class="planet-img">
+            <figcaption><strong>Jupiter</strong><p>Distance: 778.6 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/saturn.webp" alt="Saturn" class="planet-img">
+            <figcaption><strong>Saturn</strong><p>Distance: 1433.5 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/uranus.webp" alt="Uranus" class="planet-img">
+            <figcaption><strong>Uranus</strong><p>Distance: 2872.5 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/neptune.webp" alt="Neptune" class="planet-img">
+            <figcaption><strong>Neptune</strong><p>Distance: 4495.1 million km</p></figcaption>
+        </figure>
+        <figure class="planet-card">
+            <img src="https://anurella.github.io/images/planets/pluto.webp" alt="Pluto" class="planet-img">
+            <figcaption><strong>Pluto</strong><p>Distance: 5906.4 million km</p></figcaption>
+        </figure>
+    </div>
+</section>
+    
 </body>
+</html>
