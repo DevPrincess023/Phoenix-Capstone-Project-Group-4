@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 20px;
+}
+
+.planet-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate for border-radius */
+  border-spacing: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+.planet-table thead th {
+  background: #003b8f;
+  color: #fff;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+
+.planet-table thead th:first-child {
+  border-top-left-radius: 20px;
+}
+
+.planet-table thead th:last-child {
+  border-top-right-radius: 20px;
+}
+
+/* Body Cells */
+.planet-table tbody td {
+  padding: 28px 24px;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  background: #ffffff;
+}
+
+/* Left Category Sections */
+.category {
+  background: #eef5fb !important;
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+  width: 220px;
+}
+
+/* Gas Giants / Ice Giants */
+.sub-category {
+  background: #eef5fb !important;
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align: middle;
+  text-align: center;
+  width: 220px;
+}
+
+/* Planet Names */
+.name-column {
+  text-align: center;
+  font-weight: 500;
+  width: 220px;
+}
+
+/* Hover Effect */
+.planet-table tbody tr:hover td {
+  background: #f8fbff;
+  transition: background-color 0.3s ease;
+}
+
+/* Bottom Corners */
+.planet-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+.planet-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
