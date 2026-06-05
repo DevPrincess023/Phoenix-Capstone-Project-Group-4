@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Science Contact Form</title>
+    <link rel="stylesheet" href="newform.css">
+</head>
+<body>
+    <!--form container-->
+        <div class="form-container">
+        <header class="form-header">
+            <h1>Have Questions About Planetary Science?</h1>
+            <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we'll get back to you.</p>
+        </header>
+
+        <!--form group for Full name, Phone number, Email, Message field-->
+        <form id="planetaryForm" novalidate>
+
+            <!--Full name-->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullName">Full Name<span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+                    <div class="error-message" id="nameError">Please enter your full name.</div>
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+
+                <!--Phone Number-->
+                <div class="form-group">
+                    <label for="phone">Phone Number<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter a valid phone number." required>
+                    <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+                </div>
+
+                <!--Message "Text Area"-->
+                <div class="form-group">
+                    <label for="message">Message<span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Enter your message" maxlength="100" required></textarea>
+                    <div class="character-counter"><span id="charCount">0</span>/100 characters</div>
+                    <div class="error-message" id="messageError">Please enter a message.</div>
+                </div>
+            </div>
+
+            <!--Submit Button-->
+            <button type="submit" class="submit-btn">
+                Submit 
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="newform.js"></script>
+
+    <div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+        <div class="modal-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a52b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+        <h2>Submission Successful!</h2>
+        <p id="modalMessage">Your inquiry has been successfully transmitted to the planetary database.</p>
+        <button id="closeModalBtn" class="modal-btn">Close</button>
+    </div>
+</div>
+</body>
+</html>
