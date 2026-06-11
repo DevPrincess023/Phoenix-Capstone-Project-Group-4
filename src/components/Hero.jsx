@@ -14,10 +14,10 @@ function Hero() {
             breaks down the solar system in a clear, data-driven way.
           </p>
           <div className="hero-actions">
-            <a href="#explore" className="btn btn-primary" id="btn-explore">
+            <a href="#data-section" className="btn btn-primary" id="btn-explore">
               Explore the Data
             </a>
-            <a href="#contact" className="btn btn-outline" id="btn-contact">
+            <a href="#planetaryForm" className="btn btn-outline" id="btn-contact">
               Contact Us
             </a>
           </div>
