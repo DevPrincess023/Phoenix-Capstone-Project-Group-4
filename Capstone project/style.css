@@ -1,3 +1,6 @@
+body{
+    background: #f2f7ff;
+
 #data-section {
     max-width: 1000px;
     margin: 40px auto;
@@ -6,12 +9,12 @@
 }
 
 #data-section h3 {
-    color: #1e40af;
+    color: #164baf;
     margin-bottom: 10px;
 }
 
 #data-section p {
-    color: #475569;
+    color: #000000;
     max-width: 700px;
     margin: 0 auto 30px auto;
     line-height: 1.6;
