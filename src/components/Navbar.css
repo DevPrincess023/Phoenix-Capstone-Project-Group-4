@@ -1,0 +1,38 @@
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.5rem 0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: opacity 0.25s ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.85;
+}
+
+.navbar-logo-icon {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
