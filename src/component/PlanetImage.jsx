@@ -1,6 +1,6 @@
 import PlanetImage from './components/PlanetImage';
 
-function App() {
+export default function PlanetImage() {
   return (
     <div className="app">
       {/* ... other components ... */}
