@@ -11,6 +11,21 @@ node_modules
 dist
 dist-ssr
 *.local
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Editor directories and files
 .vscode/*
@@ -19,6 +34,10 @@ dist-ssr
 .DS_Store
 *.suo
 *.ntvs*
+.idea/
+.DS_Store
+*.suo
+*.ntvsca*
 *.njsproj
 *.sln
 *.sw?
