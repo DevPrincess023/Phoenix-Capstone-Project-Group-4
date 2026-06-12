@@ -1,6 +1,6 @@
 import "./table.css";
 
-function DataTable() {
+export default function DataTable() {
     return (
         <section className="table">
             <header>
