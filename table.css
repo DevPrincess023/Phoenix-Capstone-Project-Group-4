@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #164BAF;
+    font-size: 22px;
+    line-height: 0.8;
+    padding: 15px;
+}
+
+p {
+    font-size: 11px;
+    color: #0F2A44;
+    margin-bottom: 15px;
+    padding: 15px;
+    line-height: 1.5;
+    padding-top: 0;
+}
+
+caption {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 15px;
+
+}
+
+.planet-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.planet-table thead th {
+    background: #164BAF;
+    color: #ffffff;
+    padding: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+
+.planet-table tbody td {
+    padding: 28px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background: #F2F7FF;
+}
+
+
+.category,
+.sub-category {
+    background: #D1E3FF;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    padding: 20px;
+}
+
+
+.planet-table thead th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.planet-table thead th:last-child {
+    border-top-right-radius: 15px;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .planet-table thead th,
+    .planet-table tbody td {
+        padding: 16px 12px;
+        font-size: 12px;
+    }
+
+    .category,
+    .sub-category {
+        font-size: 12px;
+        padding: 16px 12px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    caption {
+        font-size: 11px;
+    }
+
+    .planet-table {
+        min-width: 700px;
+    }
+
+    .planet-table thead th,
+    .planet-table tbody td {
+        padding: 12px 8px;
+        font-size: 11px;
+    }
+
+    .category,
+    .sub-category {
+        font-size: 11px;
+        padding: 12px 8px;
+    }
+}
+
+
+
+
+
+
+
