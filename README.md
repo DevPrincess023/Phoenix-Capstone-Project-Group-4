@@ -1,43 +1,16 @@
-# Phoenix-Capstone-Project-Group-4
+# React + Vite
 
-A React web application that explores our solar system through data. Built as a capstone project for the TS Academy Frontend Development course.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Live Demo
+Currently, two official plugins are available:
 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Project Summary
+## React Compiler
 
-This application recreates a provided mockup as a fully working React web app. It fetces real planet data from an external API and displays it in a responsive grid of planet cards. It also includes a comparative NASA data table, and a validated contact form. The project demonstrates HTML, CSS, JavaScript fundamentals, React component architecture, the Fetch API, responsive design, and collaborative Git workflows, all skills covered throughout the TS Academy Frontend Development course.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Team Members
+## Expanding the ESLint configuration
 
-- Mercy https://github.com/DevPrincess023
-- Daniel https://github.com/Dannyfx-spec
-- Michael https://github.com/Mickeyflash196
-- Glory https://github.com/
-- Jude https://github.com/marvinmoses2425-cmyk 
-- Fredrick https://github.com/001-Fred
-- Ifeoma https://github.com/Ifystina
-- Favour https://github.com/
-- Victor https://github.com/
-- Emmanuel https://github.com/Modupe101
-
-
-## Components
-
-- **Header** - Worked on by:
-- **Video section** - Worked on by: Jude
-- **Image section** - Worked on by: Michael and Fredrick
-- **Data Table** - Worked on by: Mercy
-- **contact form** - Worked on by: Victor
-- **Footer** - Worked on by: Daniel
-
-
-## How to Run
-
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the app: `npm start`
-4. Open http://localhost:3000 in your browser
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

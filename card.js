@@ -1,19 +1,12 @@
+import './style.css';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Group Footer</title>
+function index() {
+    return (
+        <footer className="footer">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <div className="footer-content">
 
-    <footer class="footer">
-
-        <div class="footer-content">
-
-            <div class="about-section">
+            <div className="about-section">
                 <h2>About</h2>
 
                 <p>
@@ -28,11 +21,11 @@
                 </p>
             </div>
 
-            <div class="footer-divider"></div>
+            <div className="footer-divider"></div>
 
-            <div class="footer-bottom">
+            <div className="footer-bottom">
 
-                <div class="copyright">
+                <div className="copyright">
 
                     <p>
                         © 2026 Design by
@@ -47,7 +40,7 @@
 
                     <p>
                         Built by
-                        <a href="https://github.com/DevPrincess023/Phoenix-Capstone-Project-Group-4" target="_blank">
+                        <a href="https://github.com/Devprincess023/Phoenix-Capstone-ProjectGroup-4" target="_blank">
                             Phoenix Group 4 Repository
                         </a>.
                         All rights reserved.
@@ -55,7 +48,7 @@
 
                 </div>
 
-                <div class="academy">
+                <div className="academy">
                     <a href="https://tsacademyonline.com/" target="_blank">
                         TSAcademy
                     </a>
@@ -66,9 +59,8 @@
         </div>
 
     </footer>
+    );
 
-</body>
-</html>
-<script src="script.js"></script>
-</body>
-</html>
+}
+
+export default index;
