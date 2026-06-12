@@ -14,21 +14,21 @@ This application recreates a provided mockup as a fully working React web app. I
 - Mercy https://github.com/DevPrincess023
 - Daniel https://github.com/Dannyfx-spec
 - Michael https://github.com/Mickeyflash196
-- Glory https://github.com/
+- Glory https://github.com/mentorbestbuy
 - Jude https://github.com/marvinmoses2425-cmyk 
 - Fredrick https://github.com/001-Fred
 - Ifeoma https://github.com/Ifystina
-- Favour https://github.com/
-- Victor https://github.com/
+- Favour https://github.com/faveyy003
+- Victor https://github.com/VeekayDev
 - Emmanuel https://github.com/Modupe101
 
 
 ## Components
 
-- **Header** - Worked on by:
+- **Header** - Worked on by: Ifeoma
 - **Video section** - Worked on by: Jude
 - **Image section** - Worked on by: Michael and Fredrick
-- **Data Table** - Worked on by: Mercy
+- **Data Table** - Worked on by: Mercy and Emmanuel
 - **contact form** - Worked on by: Victor
 - **Footer** - Worked on by: Daniel
 
