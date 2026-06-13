@@ -161,3 +161,5 @@ export default function PlanetaryContactForm() {
     </div>
   );
 }
+
+export default App;
