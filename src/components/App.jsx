@@ -1,15 +1,15 @@
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import Video from "./Video";
-import PlanetImage from "./PlanetImage";
-import DataTable from "./DataTable";
-import PlanetaryContactForm from "./PlanetaryContactForm";
-import SuccessModal from "./SuccessModal";
-import Footer from "./Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Video from "./component/Video";
+import PlanetImage from "./component/PlanetImage";
+import DataTable from "./components/DataTable";
+import PlanetaryContactForm from "./components/PlanetaryContactForm";
+import SuccessModal from "./components/SuccessModal";
+import Footer from "./component/Footer";
 
 function App() {
    return (
-    <div>
+    <>
        <Hero/>
        <Navbar/>
        <Video/>
@@ -18,7 +18,7 @@ function App() {
        <PlanetaryContactForm/>
        <SuccessModal/>
        <Footer/>
-    </div>
+    </>
  );
 }
 
