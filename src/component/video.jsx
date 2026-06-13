@@ -78,3 +78,5 @@ export default function Video() {
     </section>
   );
 }
+
+export default App;
