@@ -28,3 +28,5 @@ export default function SuccessModal({ isOpen, message, onClose }) {
     </div>
   );
 }
+
+export default App;
