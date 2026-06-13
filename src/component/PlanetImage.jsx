@@ -9,3 +9,5 @@ export default function PlanetImage() {
     </div>
   );
 }
+
+export default App;
