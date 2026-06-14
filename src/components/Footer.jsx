@@ -119,4 +119,4 @@ function App() {
   )
 }
 
-export default Footer
+export default Footer;
