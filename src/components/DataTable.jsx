@@ -124,4 +124,3 @@ export default function DataTable() {
     );
 }
 
-export default DataTable;
