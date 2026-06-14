@@ -43,4 +43,4 @@ export default function Hero() {
   );
 }
 
-export default App;
+export default Hero;
