@@ -77,4 +77,6 @@ export default function Video() {
       </div>
     </section>
   );
-}
+};
+
+export default Video;
