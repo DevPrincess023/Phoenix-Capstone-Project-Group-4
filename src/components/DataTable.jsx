@@ -124,4 +124,4 @@ export default function DataTable() {
     );
 }
 
-export default App;
+export default DataTable;
