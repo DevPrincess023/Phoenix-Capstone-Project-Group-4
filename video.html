@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Data</title>
+  <link rel="stylesheet" href="video.css">
+</head>
+<body>
+
+  <!-- Video + Text Section -->
+  <section class="planetary-section">
+    <div class="container">
+        <div class="video-wrapper">
+            <video 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                controls
+                preload="metadata"
+                poster="Assets/Planetary image.jpeg" alt="Planetary picture">
+                title="Planetary data visualization showing orbital paths and measurements"
+                aria-label="Video showing planetary data visualization">
+                
+                <source src="Video/Updated vid.mp4" type="video/mp4" alt="Earth rotating">
+                
+                <!-- Fallback text for browsers that don't support video -->
+                Your browser does not support the video tag. 
+                <a href="assets/planetary-video.mp4">Download the video here</a>.
+            </video>
+        </div>
+        <div class="content">
+            <h2>How Planetary Data Helps Us <br>Understand Space</h2>
+            <p>
+                Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density</strong>, we gain insight into how planets form, behave, and interact within the solar system.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
