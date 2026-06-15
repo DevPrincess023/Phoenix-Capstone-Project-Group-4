@@ -1,7 +1,7 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import Hero from "./components/Navbar";
+import Navbar from "./components/Hero";
 import Video from "./components/Video";
-import PlanetImage from "./components/PlanetImage";
+import PlanetDashboard from "./components/PlanetDashboard";
 import DataTable from "./components/DataTable";
 import PlanetaryContactForm from "./components/PlanetaryContactForm";
 import SuccessModal from "./components/SuccessModal";
@@ -13,7 +13,7 @@ function App() {
        <Navbar/>
        <Hero/>
        <Video/>
-       <PlanetaryImage/>
+       <PlanetDashboard/>
        <DataTable/>
        <PlanetaryContactForm/>
        <SuccessModal/>
