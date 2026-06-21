@@ -1,13 +1,330 @@
-
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Group Footer</title>
+    <title>Phoenix Group </title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="table.css">  
+    <link rel="stylesheet" href="Hero.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="#hero-section" class="navbar-logo" id="navbar-logo">
+          <img
+            src="assets/logo.svg"
+            alt="Planet logo"
+            class="navbar-logo-icon"
+          />
+        </a>
+
+        <!-- Navigation links removed -->
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Explore Our Solar System Through Data
+          </h1>
+          <p class="hero-description" id="hero-description">
+            Understand the planets not just by name, but by measurable
+            facts. From size and mass to gravity and density, this page
+            breaks down the solar system in a clear, data-driven way.
+          </p>
+          <div class="hero-actions">
+            <a href="#planetImage" class="btn btn-primary" id="btn-explore">
+              Explore the Data
+            </a>
+            <a href="#planetaryForm" class="btn btn-outline" id="btn-contact">
+              Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-planet-wrapper">
+            <div class="hero-planet-glow"></div>
+            <img
+              src="assets/earth.svg"
+              alt="A glowing 3D planet Earth floating in space"
+              class="hero-planet-img"
+              id="hero-planet-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive script -->
+    <script src="script.js"></script>
+
+    <!-- Video + Text Section -->
+    <section class="planetary-section">
+      <div class="container">
+          <div class="video-wrapper">
+              <video 
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline 
+                  controls
+                  preload="metadata"
+                  poster="Assets/Planetary image.jpeg" alt="Planetary picture">
+                  title="Planetary data visualization showing orbital paths and measurements"
+                  aria-label="Video showing planetary data visualization">
+                  
+                  <source src="TS Capestone Project/Video/Updated vid.mp4" type="video/mp4" alt="Earth rotating">
+                  
+                  <!-- Fallback text for browsers that don't support video -->
+                  Your browser does not support the video tag. 
+                  <a href="assets/planetary-video.mp4">Download the video here</a>.
+              </video>
+          </div>
+          <div class="content">
+              <h2>How Planetary Data Helps Us <br>Understand Space</h2>
+              <p>
+                  Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density</strong>, we gain insight into how planets form, behave, and interact within the solar system.
+              </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- IMAGES SECTION -->
+     <section id="planetImage">
+      <div>
+          <h3> Visualizing the Differnces Between Planets.</h3>
+          <p>Each planets in our solar system has unique physical characteristics. Visual comparisons help highlight how <br> 
+              vastly different terrestial planets are from gas giants and ice gaints.
+          </p>
+        <img src="https://anurella.github.io/images/planets/mercury.webp" alt="Mercury">
+        <h3>Mercury</h3>
+        <p> 57.9 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/venus.webp" alt="Venus">
+        <h3>Venus</h3>
+        <p>108.2 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/earth.jpg" alt="Earth">
+        <h3>Earth</h3>
+        <p>149.6 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/mars.webp" alt="Mars">
+        <h3>Mars</h3>
+        <p>227.9 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/jupiter.webp" alt="Jupiter">
+        <h3>Jupiter</h3>
+        <p>778.6 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/saturn.webp" alt="Saturn">
+        <h3>Saturn</h3>
+        <p>1433.5 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/uranus.webp" alt="Uranus">
+        <h3>Uranus</h3>
+        <p>2872.5 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/neptune.webp" alt="Neptune">
+        <h3>Neptune</h3>
+        <p>4495.1 million km</p>
+      </div>
+      <div>
+        <img src="https://anurella.github.io/images/planets/pluto.webp" alt="Pluto">
+        <h3>Pluto</h3>
+        <p>5906.4 million km</p>
+      </div>
+     </section>
+
+    <section class="table">
+      <header>
+          <h2>Planetary Facts at a Glance</h2>
+          <p>
+              Below is a comparative table of major planets in our solar system.
+              The data highlights key physical properties used by astronomers and researchers worldwide.
+          </p>
+      </header>
+
+      <div class="table-container">
+          <table class="planet-table">
+              <caption>
+                  Data about the planets of our solar system (Planetary facts taken from NASA)
+              </caption>
+
+              <thead>
+                  <tr>
+                      <th colspan="2"></th>
+                      <th>Name</th>
+                      <th>Mass (10²⁴ kg)</th>
+                      <th>Diameter (km)</th>
+                      <th>Density (kg/m³)</th>
+                      <th>Gravity (m/s²)</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <th colspan="2" rowspan="4" class="category">Terrestrial Planets</th>
+                      <td>Mercury</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <td>Venus</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <td>Earth</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <td>Mars</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <th rowspan="4" class="category">Jovian Planets</th>
+                      <th rowspan="2" class="sub-category">Gas Giants</th>
+                      <td>Jupiter</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <td>Saturn</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <th rowspan="2" class="sub-category">Ice Giants</th>
+                      <td>Uranus</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <td>Neptune</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+
+                  <tr>
+                      <th colspan="2" class="category">Dwarf Planets</th>
+                      <td>Pluto</td>
+                      <td>0.330</td>
+                      <td>4,878</td>
+                      <td>5,427</td>
+                      <td>3.7</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </section>
+
+    <!--form container-->
+    <div class="form-container">
+        <header class="form-header">
+            <h2>Have Questions About Planetary Science?</h2>
+            <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we'll get back to you.</p>
+        </header>
+
+        <!--form group for Full name, Phone number, Email, Message field-->
+        <form id="planetaryForm" novalidate>
+
+            <!--Full name-->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullName">Full Name<span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+                    <div class="error-message" id="nameError">Please enter your full name.</div>
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+
+                <!--Phone Number-->
+                <div class="form-group">
+                    <label for="phone">Phone Number<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter a valid phone number." required>
+                    <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
+                </div>
+
+                <!--Message "Text Area"-->
+                <div class="form-group">
+                    <label for="message">Message<span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Enter your message" maxlength="100" required></textarea>
+                    <div class="character-counter"><span id="charCount">0</span>/100 characters</div>
+                    <div class="error-message" id="messageError">Please enter a message.</div>
+                </div>
+            </div>
+
+            <!--Submit Button-->
+            <button type="submit" class="submit-btn">
+                Submit 
+                <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+    <div id="successModal" class="modal-overlay">
+      <div class="modal-box">
+        <div class="modal-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a52b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+        </div>
+          <h3>Submission Successful!</h3>
+          <p id="modalMessage">Your inquiry has been successfully transmitted to the planetary database.</p>
+          <button id="closeModalBtn" class="modal-btn">Close</button>
+      </div>
+    </div>
 
     <footer class="footer">
 
@@ -66,9 +383,8 @@
         </div>
 
     </footer>
+    
+    <script src="script.js"></script>
 
-</body>
-</html>
-<script src="script.js"></script>
-</body>
+  </body>
 </html>
