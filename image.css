@@ -41,8 +41,8 @@ body{
     border-radius: 10px;
 }
 
-.planet-card figcaption {
-    padding: 10px 0;
+/* .planet-card figcaption {
+    padding: 10px 0; */
 }
 
 @media (max-width: 768px) {
