@@ -22,7 +22,8 @@ body{
 }
 
 .planet-grid-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap:
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
