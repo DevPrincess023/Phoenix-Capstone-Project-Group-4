@@ -1,26 +1,20 @@
-body {
+body{
     background: #f2f7ff;
-   
-
-h2 {
-    color: #164baf;
-    text-align: center;
-    margin-top: 40px;
 }
 
-#planetImage {
+#data-section {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    text-align: center:
+    text-align: center;
 }
 
-#planetImage h3 {
+#data-section h3 {
     color: #164baf;
     margin-bottom: 10px;
 }
 
-#planetImage p {
+#data-section p {
     color: #000000;
     max-width: 700px;
     margin: 0 auto 30px auto;
@@ -58,4 +52,4 @@ h2 {
 @media (max-width: 480px) {
     .planet-grid-container { grid-template-columns: 1fr; }
 }
- 
+    
