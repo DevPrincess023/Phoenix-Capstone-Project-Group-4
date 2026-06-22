@@ -1,9 +1,6 @@
 body {
     background: #f2f7ff;
-    padding: 0;
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-}
+   
 
 h2 {
     color: #164baf;
@@ -15,12 +12,12 @@ h2 {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
+    text-align: center:
 }
 
 #planetImage h3 {
     color: #164baf;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 #planetImage p {
@@ -55,14 +52,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .planet-grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .planet-grid-container { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
-    .planet-grid-container {
-        grid-template-columns: 1fr;
-    }
+    .planet-grid-container { grid-template-columns: 1fr; }
 }
  
