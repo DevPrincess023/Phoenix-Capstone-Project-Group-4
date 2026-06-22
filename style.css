@@ -8,7 +8,6 @@ body{
   font-family: "Segoe UI", sans-serif;
   background:#f4f4f4;
   min-height:100vh;
-  padding: 0%
 }
 
 .footer{
@@ -113,14 +112,12 @@ body{
 .planetImage h3{
   color: #000;
   text-align: center;
-  }
-
+}
 .planetImage p{
   color: #000;
   text-align: center;
   font-size: 14px;
 }
-
 /* Responsive */
 
 @media (max-width:1500px){
@@ -155,7 +152,6 @@ body{
   .about-section p{
     font-size:16px;
   }
-
   .planetImage{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
