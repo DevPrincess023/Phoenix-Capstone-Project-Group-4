@@ -1,20 +1,30 @@
-body{
+body {
     background: #f2f7ff;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
 }
 
-#data-section {
+h2 {
+    color: #164baf;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#planetImage {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
 }
 
-#data-section h3 {
+#planetImage h3 {
     color: #164baf;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-#data-section p {
+#planetImage p {
     color: #000000;
     max-width: 700px;
     margin: 0 auto 30px auto;
@@ -25,6 +35,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .planet-card {
@@ -32,6 +44,7 @@ body{
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .planet-img {
@@ -46,9 +59,14 @@ body{
 }
 
 @media (max-width: 768px) {
-    .planet-grid-container { grid-template-columns: repeat(2, 1fr); }
+    .planet-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
-    .planet-grid-container { grid-template-columns: 1fr; }
+    .planet-grid-container {
+        grid-template-columns: 1fr;
+    }
 }
+ 
