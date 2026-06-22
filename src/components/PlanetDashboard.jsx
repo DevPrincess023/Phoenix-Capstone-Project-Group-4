@@ -14,7 +14,7 @@ const PlanetDashboard = () => {
     ];
 
     return (
-        <section id="data-section">
+        <section id="planetImage">
             <h3>Visualizing the Differences Between Planets</h3>
             <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
             
