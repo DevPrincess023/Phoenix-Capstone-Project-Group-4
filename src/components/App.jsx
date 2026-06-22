@@ -1,5 +1,5 @@
-import Hero from "./components/Navbar";
-import Navbar from "./components/Hero";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import Video from "./components/Video";
 import PlanetDashboard from "./components/PlanetDashboard";
 import DataTable from "./components/DataTable";
@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 function App() {
    return (
     <>
-       <Navbar/>
        <Hero/>
+       <Navbar/>
        <Video/>
        <PlanetDashboard/>
        <DataTable/>
