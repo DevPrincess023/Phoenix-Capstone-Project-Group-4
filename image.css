@@ -12,14 +12,26 @@ body{
 
 #data-section h2 {
     color: #164baf;
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 0 15px 10px 15px;
+    text-align: center;
+    margin: 0;
+}
+
+#data-section p {
+    font-size: 11px;
+    color: #0f2a44;
+    margin: 0 auto 15px auto;
+    padding: 0 15px;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+/* #data-section h2 {
+    color: #164baf;
     font-size: 28px
     
-}
-        
-
-#data-section h3 {
-    color: #212121;
-    margin-bottom: 10px;
 }
 
 #data-section p {
@@ -27,7 +39,15 @@ body{
     max-width: 700px;
     margin: 0 auto 30px auto;
     line-height: 1.6;
+} */
+        
+
+#data-section h3 {
+    color: #212121;
+    margin-bottom: 10px;
 }
+
+
 
 .planet-grid-container {
     display: grid;
