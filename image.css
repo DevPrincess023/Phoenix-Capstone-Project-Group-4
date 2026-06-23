@@ -24,7 +24,6 @@ body{
 .planet-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repear (3, 100px, 100px, 100px);
     gap: 20px;
 }
 
@@ -33,7 +32,7 @@ body{
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    display: grid;
+    
 }
 
 .planet-img {
@@ -41,7 +40,7 @@ body{
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    display: grid;
+
 }
 
 .planet-card figcaption {
