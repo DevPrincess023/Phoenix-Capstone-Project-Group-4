@@ -7,7 +7,6 @@ body{
     margin: 40px auto;
     padding: 20px;
     text-align: center;
-    display: grid;
 }
 
 #data-section h3 {
@@ -41,6 +40,7 @@ body{
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    display: grid;
 }
 
 .planet-card figcaption {
