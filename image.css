@@ -24,6 +24,7 @@ body{
 .planet-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repear (3, 100px, 100px, 100px);
     gap: 20px;
 }
 
