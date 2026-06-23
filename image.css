@@ -6,11 +6,11 @@ body{
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
+    text-align: center;
     
 }
 
 #data-section h2{
-    text-align: center;
     color: #164baf;
     font-size: 28px
 }
@@ -19,7 +19,6 @@ body{
 #data-section h3 {
     color: #212121;
     margin-bottom: 10px;
-    text-align: center:
 }
 
 #data-section p {
