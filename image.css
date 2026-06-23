@@ -10,7 +10,7 @@ body{
     
 }
 
-#data-section h2{
+.heading {
     color: #164baf;
     font-size: 28px
     text-align: center;
