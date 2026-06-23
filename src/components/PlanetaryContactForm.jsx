@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SuccessModal from './SuccessModal';
-import './newform.css'; // Make sure newform.css is in the same directory
+import './form.js'; 
 
 export default function PlanetaryContactForm() {
   // State for form inputs
